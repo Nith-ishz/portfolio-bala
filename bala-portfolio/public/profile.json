@@ -1,0 +1,128 @@
+{
+    "name": "Sontibala",
+    "firstName": "sonti",
+    "lastName": "bala",
+    "professional": "pubg player",
+    "dob": "01.04.2000",
+    "email": "lavadekebal@email.com",
+    "mobile": "9876543210",
+    "address": "6, vivekanadhar theru, dubai kurukku sandhu, dubai main road, dubai",
+    "abt-me": "hi, iam so called human being",
+    "education": {
+        "sslc": null,
+        "hsc": {
+            "name": "siruvar seer thirutha palli",
+            "place": "tihar jail",
+            "timeline": {
+                "to": 2020
+            },
+            "subject": "story telling",
+            "percentage": 9
+        },
+        "graduation": {
+            "name": "periyavar seer thirutha palli",
+            "place": "tihar jail",
+            "timeline": {
+                "from": 2020,
+                "to": 2023
+            },
+            "subject": "story telling",
+            "percentage": 8
+        }
+    },
+    "experience": [
+        {
+            "name": "naveena kalippidam",
+            "place": "salem new bustand",
+            "role": "cleaner",
+            "desc": "role of maintaing hygenic restrooms and collecting tips from consumers",
+            "timeline": {
+                "from": "01-01-2023",
+                "to": "02-06-2024"
+            },
+            "exp": "2 years",
+            "work": [
+                "wasing and maintaining the bathroom cleanly",
+                "asking tips to the customers without owner knowledge",
+                "theifing consumer properties and blaming it was done by owner",
+                "eating food and snacks during worktime secretly"
+            ]
+        },
+        {
+            "name": "nullllllinz",
+            "place": "five roads, salem",
+            "role": "conductor",
+            "desc": "surving day to day from management, working as a mobile app developer. management gives tasks, and gives tasks and always give tasks but no more time to done it also no higher pay. very worst company",
+            "timeline": {
+                "from": "01-01-2025",
+                "to": null
+            },
+            "exp":"1 years",
+            "work": [
+                "carrying multiple tasks assigned by team and done nothing on given time..",
+                "sightime my ex hr and current ceo aggresivly and pretending to she was not yours",
+                "using instagram on working time, and forward gaaji reels to nithish"
+            ]
+        }
+    ],
+    "skills": [
+        "quick learner",
+        "pro player on pubg mobile",
+        "camper",
+        "ace dominator",
+        "survivor",
+        "four finger player",
+        "lavanya gopal",
+        "shameless fellow",
+        "kill chor",
+        "bot player",
+        "ladies porukki",
+        "gay",
+        "see more"
+    ],
+    "projects": [
+        {
+            "images": "project1.avif",
+            "tittle": "some title 1",
+            "desc": "lorem ipsum descriptionwuhdvyehwvyhqudvywquyb",
+            "role": "thanda soru",
+            "url": "https://github.com/deepseek-ai/deepseek-harness"
+        },
+        {
+            "images": "project2.avif",
+            "tittle": "some title 2",
+            "desc": "oqwifniuqhiueqnh iuwehqfq8quhe  uhf8 q weufh8weuqh f8euhgy8 wewefghe7fh87we",
+            "role": "alternative thanda soru",
+            "url": "https://github.com/deepseek-ai/deepseek-harness"
+        },
+        {
+            "images": "project3.avif",
+            "tittle": "some title 3",
+            "desc": "rugh  erh8734 hr e8u8rhg8g7huf 8rgr eqqubieuwf ",
+            "role": "lavanya gopal",
+            "url": "https://github.com/deepseek-ai/deepseek-harness"
+        },
+        {
+            "images": "project4.avif",
+            "tittle": "some title 4",
+            "desc": "wqe89fhj hef98hr f 398ur9e8f 9wef e398e wf98e4r98 4",
+            "role": "vetti officer",
+            "url": "https://github.com/deepseek-ai/deepseek-harness"
+        },
+        {
+            "images": "project5.avif",
+            "tittle": "some title 5",
+            "desc": "sacd9we8 yuweg8rf e e8fyg83",
+            "role": "nulinz watchman",
+            "url": "https://github.com/deepseek-ai/deepseek-harness"
+        }
+    ],
+    "description": {
+        "main": "From Code To Deployments,\n I Make The Web Work Better!",
+        "sub": "I write clean code, automate tasks, and build apps that \n don't break. Learning, growing, and making the web better.",
+        "content": "Software Engineer Specializing In **Web Technologies** With Hands-On Experience In **JavaScript**,**TypeScript**, and **MongoDB**. Skilled In Building High-Performance, Secure, And Scalable Applications, With A Strong Focus On **Clean Code**, **Testing**, And DevOps Practices.",
+        "project": "I write clean code, automate tasks, and build apps that \n don't break. Learning, growing, and making the web better.",
+        "experience": "I write clean code, automate tasks, and build apps that \n don't break. Learning, growing, and making the web better.",
+        "contact": "Free services available, time pass dont come, send some message"
+    }
+}
