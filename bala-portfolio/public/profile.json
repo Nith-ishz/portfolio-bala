@@ -2,6 +2,7 @@
     "name": "Sontibala",
     "firstName": "sonti",
     "lastName": "bala",
+    "avatarDir": "/assets/profile.avif",
     "professional": "pubg player",
     "dob": "01.04.2000",
     "email": "lavadekebal@email.com",
