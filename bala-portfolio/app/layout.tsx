@@ -10,7 +10,9 @@ const urbanist = Urbanist({
 
 const sansFlex = Google_Sans_Flex({
   variable: "--font-google-sansflex",
-  subsets: ["latin"]
+  subsets: ["latin"],
+  adjustFontFallback: false,
+  fallback: ["system-ui", "arial"],
 })
 
 const caveat = Caveat({

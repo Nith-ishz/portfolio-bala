@@ -2,35 +2,66 @@
 
 import Image from "next/image";
 import profile from "@/public/profile.json";
-import profileImage from "@/public/assets/profile.avif";
 import theme from "@/config/theme.json";
+import Reveal from "@/components/common/reveal";
 
 export default function MainIndex() {
+    const resume = (profile as { resume?: string }).resume;
+
+    const scrollToContact = () => {
+        document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
+    };
+
     return (
-        <div className="m-5 flex flex-col gap-5">
-            <div className="flex justify-center items-center">
-                <div className="font-caveat text-xl text-center">
-                    <Image src={profileImage.src} width={100} height={100} className="w-full h-auto" alt="profile_image" />
-                    <p>{profile.professional}</p>
+        <div id="about" className="m-5 flex flex-col gap-5 scroll-mt-24">
+            <Reveal className="flex justify-center items-center">
+                <div className="font-caveat text-lg sm:text-xl text-center">
+                    <Image
+                        src="/assets/profile.avif"
+                        width={100}
+                        height={100}
+                        className="w-24 h-24 sm:w-[100px] sm:h-[100px] rounded-full object-cover mx-auto"
+                        alt={profile?.name ? `${profile.name} profile photo` : "profile photo"}
+                    />
+                    {profile?.professional && <p>{profile.professional}</p>}
                 </div>
-            </div>
+            </Reveal>
 
-            {profile?.description?.main && <div className="flex justify-center text-center m-3">
-                <pre className="text-6xl tracking-light leading-tight font-bold font-sans" style={{color : theme.leading}}>
-                    {profile?.description?.main}
-                </pre>
-            </div>}
+            {profile?.description?.main && (
+                <Reveal delay={100} className="flex justify-center text-center m-3">
+                    <pre className="whitespace-pre-wrap text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-light leading-tight font-bold font-sans" style={{ color: theme.leading }}>
+                        {profile.description.main}
+                    </pre>
+                </Reveal>
+            )}
 
-            {profile?.description?.sub && <div className="flex justify-center text-center" style={{color: theme.text}}>
-                <pre className="font-sans">
-                    {profile?.description?.sub}
-                </pre>
-            </div>}
+            {profile?.description?.sub && (
+                <Reveal delay={200} className="flex justify-center text-center">
+                    <pre className="whitespace-pre-wrap font-sans text-sm sm:text-base" style={{ color: theme.text }}>
+                        {profile.description.sub}
+                    </pre>
+                </Reveal>
+            )}
 
-            <div className="flex justify-center font-sansflex gap-3 m-4">
-                <button className="bg-white/15 p-2 rounded-md justify-center" onClick={() => alert("this is alert")}>Lookout Resume</button>
-                <button className="bg-white p-2 rounded-md font-bold" style={{color: theme.primary}} onClick={() => alert("this is alert")}>Contact me</button>
-            </div>
+            <Reveal delay={300} className="flex flex-wrap justify-center font-sansflex gap-3 m-4">
+                {resume && (
+                    <a
+                        href={resume}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white/15 p-2 rounded-md justify-center hover:bg-white/25 transition-colors"
+                    >
+                        Lookout Resume
+                    </a>
+                )}
+                <button
+                    className="bg-white p-2 rounded-md font-bold cursor-pointer hover:opacity-90 transition-opacity"
+                    style={{ color: theme.primary }}
+                    onClick={scrollToContact}
+                >
+                    Contact me
+                </button>
+            </Reveal>
         </div>
     );
 }
