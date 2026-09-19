@@ -17,7 +17,7 @@ export default function MainIndex() {
             <Reveal className="flex justify-center items-center">
                 <div className="font-caveat text-lg sm:text-xl text-center">
                     <Image
-                        src="/assets/profile.avif"
+                        src={profile.avatarDir}
                         width={100}
                         height={100}
                         className="w-24 h-24 sm:w-[100px] sm:h-[100px] rounded-full object-cover mx-auto"
